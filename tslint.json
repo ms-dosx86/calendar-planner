@@ -4,6 +4,7 @@
     "codelyzer"
   ],
   "rules": {
+    "prefer-for-of": false,
     "align": {
       "options": [
         "parameters",
@@ -83,7 +84,7 @@
       }
     },
     "typedef": [
-      true,
+      false,
       "call-signature"
     ],
     "typedef-whitespace": {

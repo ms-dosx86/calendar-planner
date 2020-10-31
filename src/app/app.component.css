@@ -1,0 +1,10 @@
+:host {
+  padding: 15px;
+  display: block;
+}
+
+button {
+  display: block;
+  width: 150px;
+  margin: 10px auto;
+}

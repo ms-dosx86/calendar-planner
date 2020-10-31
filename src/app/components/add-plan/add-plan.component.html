@@ -1,0 +1,17 @@
+<form (ngSubmit)="onSubmit()" #formDirective="ngForm"  [formGroup]="form">
+  <mat-form-field>
+    <input formControlName="name" matInput placeholder="Plan name" autocomplete="off" type="text">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Enter a date range</mat-label>
+    <mat-date-range-input [rangePicker]="picker">
+      <input formControlName="startDate" matStartDate placeholder="Start date">
+      <input formControlName="endDate" matEndDate placeholder="End date">
+    </mat-date-range-input>
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-date-range-picker #picker></mat-date-range-picker>
+  </mat-form-field>
+
+  <button mat-flat-button color="primary">Add</button>
+</form>
